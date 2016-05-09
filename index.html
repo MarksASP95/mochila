@@ -10,6 +10,151 @@
     <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
   </head>
   <body>
+    
+    <style>
+      *{
+  margin:0;
+  padding:0;
+}
+
+body{
+  background: url('http://www.developerdev.com/images/placeholders/1920x1200-3.jpg');
+}
+
+nav{
+  width:100%;
+  height: 120px;
+  /*box-sizing: border-box;
+  border:1px solid red;*/
+}
+
+#logo{
+  font-family: 'Pacifico', cursive;
+  font-size: 2.5em;
+  line-height: 50px;
+  color:#fff;
+}
+
+nav ul{
+  padding:40px;
+}
+
+nav ul li{
+  float:right;
+  list-style: none;
+  margin-left:40px;
+  line-height: 50px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color:#fff;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: bold;
+  display: block;
+}
+
+#naranja:after{border-color:rgb(228, 149, 43);}
+#verde:after{border-color:rgb(31, 143, 59);}
+#rojo:after{border-color:rgb(241, 42, 29);}
+#azul:after{border-color: rgb(65, 102, 235);}
+
+nav ul li a:after{
+  display:block;
+  content: '';
+  border-bottom: solid 3px;
+  transform: scaleX(0.0001);
+  transition: transform 200ms ease-in-out;
+}
+
+nav ul li a:hover:after{
+  transform: scaleX(1);
+}
+
+.secciones{
+  width: 100%;
+  display: inline-block;
+}
+
+.secciones-wrap{
+  width:80%;
+  display:flex;
+  margin:200px auto 0;
+  min-height: 500px;
+  justify-content: space-around;;
+  flex-wrap: wrap;
+  /*box-sizing: border-box;
+  border:1px solid yellow;*/
+}
+
+.seccion{
+  width: 20%;
+  /*box-sizing: border-box;
+  border:1px solid red;*/
+  height: 350px;
+  position: relative;
+  margin:20px;
+  min-width: 300px;
+  border-radius: 1%;
+}
+
+.seccion h2{
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom:0;
+  color:#000;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.seccion img{
+  width: 100%;
+  margin: 70px 0 auto;
+  /*box-sizing: border-box;
+  border:1px solid red;*/
+  dislay: block;
+}
+
+#frontend{background-color: rgb(209, 158, 99); transition: background-color ease .2s;}
+#frontend:hover{background-color: rgb(237, 123, 18)}
+#backend{background-color: rgb(91, 122, 97); transition: background-color ease .2s;}
+#backend:hover{background-color: rgb(27, 168, 41);}
+#tutoriales{background-color: rgb(208, 115, 115); transition: background-color ease .2s;}
+#tutoriales:hover{background-color: rgb(231, 55, 44);}
+#herramientas{background-color: rgb(91, 101, 154); transition: background-color ease .2s;}
+#herramientas:hover{background-color: rgb(43, 84, 232);}
+
+
+.seccion a{
+  display:block;
+  height: 100%;
+}
+
+@media (max-width:1685px){
+  .secciones-wrap{
+    margin:100px auto 0;
+  }
+}
+
+@media (max-width:1000px){
+  .seccion{
+    height: 175px;
+  }
+  .seccion img{
+    margin:0 auto;
+    display: block;
+    width: 70%;
+  }
+}
+
+@media (max-width:300px){
+  .seccion{
+    width: 100%;
+  }
+}
+
+    </style>
+    
     <nav>
       <ul>
         <span id="logo">Mochila</span>
